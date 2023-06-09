@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    font-size: 1.125rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+/*----------*/
+.container {
+    max-width: 1140px;
+    padding: 0 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+/*Head*/
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 3px solid #FF00FF;
+}
+.head img {
+    width: 280px;
+}
+.head .sub-logo {
+    color: #AC87C7;
+    font-size: 32px;
+}
+.head .sub-logo span {
+     color: #000;
+ }
+/*Main*/
+.main {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    gap: 40px;
+}
+.main .mainnet-box {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    row-gap: 30px;
+}
+.main .mainnet-box .mainnet-box-inner {
+    padding: 20px;
+    row-gap: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 160px;
+}
+.main .lto-mainnet .mainnet-logo img {
+    width: 240px;
+}
+.main .sub-logo {
+    color: #AC87C7;
+    font-size: 28px;
+    padding-left: 50px;
+}
+.main .sub-logo span {
+    color: #FFF;
+}
+.main .mainnet-countdown {
+    display: flex;
+}
+.main .mainnet-countdown .counter {
+    text-align: center;
+    color: #FFF;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.main .mainnet-countdown .counter span {
+    color: #FFF;
+    font-size: 14px;
+}
+.main .mainnet-box .nodes-counter {
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+/*LTO Specific*/
+.main .lto-mainnet .mainnet-box-inner {
+    background-color: #4B4595;
+}
+.main .lto-mainnet {
+    flex-grow: 2;
+}
+.main .lto-mainnet .mainnet-countdown .counter {
+    color: #AC87C7;
+}
+.main .lto-mainnet .mainnet-countdown .counter {
+    flex-grow: 4;
+}
+/*DUSK Specific*/
+.main .dusk-mainnet .mainnet-box-inner {
+    background-color: #AC87C7;
+}
+.main .dusk-mainnet {
+    flex-grow: 1;
+}
+.main .dusk-mainnet .mainnet-countdown .counter {
+    font-size: 32px;
+}
+.main .dusk-mainnet .mainnet-countdown {
+    flex-direction: column;
+}
+.main .dusk-mainnet .mainnet-logo img {
+    width: 200px;
+}
+.main .dusk-mainnet .mainnet-logo {
+    justify-content: center;
+    display: flex;
+}
+/*Bottom*/
+.bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+    padding: 0 20px;
+    padding-bottom: 20px;
+}
+/*----------- RESPONSIVE -----------*/
+/*Mobile*/
+@media screen and (min-width: 415px) {
+}
+/*Portrait tablet*/
+@media screen and (min-width: 769px) {
+    .container {
+        padding: 0 40px;
+    }
+    .head {
+        padding: 40px;
+    }
+    .head img {
+        width: 580px;
+        font-size: 58px;
+    }
+    .main {
+        padding: 40px;
+    }
+    .main .lto-mainnet .mainnet-logo img {
+        width: 400px;
+    }
+    .main .sub-logo {
+        font-size: 36px;
+        padding-left: 82px;
+    }
+    .main .mainnet-box .mainnet-box-inner {
+        min-height: 215px;
+        padding: 40px;
+    }
+    .main .mainnet-countdown .counter {
+        font-size: 32px;
+    }
+    .main .mainnet-countdown .counter span {
+        font-size: 20px;
+    }
+    .main .mainnet-box .counter {
+        font-size: 32px;
+    }
+    .bottom {
+        padding: 40px;
+        padding-top: 0;
+    }
+}
+
+/*Landscape tablet*/
+@media screen and (min-width: 1024px) {
+    .container {
+        padding: 0 60px;
+    }
+    .head {
+        padding: 60px 0;
+    }
+    .head img {
+        width: auto;
+    }
+    .head .sub-logo {
+        color: #AC87C7;
+        font-size: 74px;
+    }
+    .main {
+        padding: 60px;
+        column-gap: 50px;
+        flex-direction: row;
+    }
+    .bottom {
+        padding: 60px;
+        padding-top: 0;
+    }
+}
+
+/*!*Desktop*!*/
+/*@media screen and (min-width: 1081px) {*/
+/*    .container {*/
+/*        padding: 0 80px;*/
+/*    }*/
+/*    .head {*/
+/*        padding: 80px 0;*/
+/*    }*/
+/*    .main {*/
+/*        padding: 80px;*/
+/*     }*/
+/*    .bottom {*/
+/*        padding: 80px;*/
+/*        padding-top: 0;*/
+/*    }*/
+/*}*/
