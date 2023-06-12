@@ -1,9 +1,6 @@
 async function getNodes() {
     const response = await fetch('https://lto.tools/nodes/json', {
-        method: 'GET',
-        headers: {
-            "Content-Type": "application/json",
-        }
+        method: 'GET'
     });
     const json = await response.json();
     return json;
