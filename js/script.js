@@ -9,9 +9,11 @@ const month = ["January","February","March","April","May","June","July","August"
 
 const d = new Date();
 let name = month[d.getMonth()];
+let year = d.getFullYear();
 
 // Updates current month in text.
 document.getElementsByClassName('current-month')[0].innerHTML = name;
+document.getElementsByClassName('current-year')[0].innerHTML = year;
 
 // Counts LTO nodes
 (async () => {
